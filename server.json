@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.Thinkode/thinkreview",
+  "title": "ThinkReview",
+  "description": "Live PR/MR code reviews via review_url_code. OAuth or portal Bearer auth.",
+  "version": "1.3.0",
+  "repository": {
+    "url": "https://github.com/Thinkode/thinkreview-mcp",
+    "source": "github"
+  },
+  "websiteUrl": "https://thinkreview.dev/features/mcp",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.thinkreview.dev/v1"
+    }
+  ]
+}
