@@ -9,6 +9,7 @@ Connect **Cursor**, **Claude Code**, **Claude Desktop**, or **GitHub Copilot**, 
 | **Endpoint** | `https://mcp.thinkreview.dev/v1` |
 | **Transport** | Streamable HTTP |
 | **Auth** | **OAuth (recommended)** or Bearer token |
+| **Registry** | [`io.github.Thinkode/thinkreview`](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.Thinkode%2Fthinkreview/versions/latest) |
 | **Product** | [thinkreview.dev/features/mcp](https://thinkreview.dev/features/mcp) |
 | **Docs** | [thinkreview.dev/docs/mcp-integration](https://thinkreview.dev/docs/mcp-integration/) |
 | **Setup** | [portal.thinkreview.dev/mcp](https://portal.thinkreview.dev/mcp) |
