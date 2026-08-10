@@ -1,0 +1,11 @@
+{
+  "servers": {
+    "thinkreview": {
+      "type": "http",
+      "url": "https://mcp.thinkreview.dev/v1",
+      "headers": {
+        "Authorization": "Bearer <your-token>"
+      }
+    }
+  }
+}
