@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "thinkreview": {
+      "command": "npx",
+      "args": ["-y", "mcp-remote", "https://mcp.thinkreview.dev/v1"]
+    }
+  }
+}

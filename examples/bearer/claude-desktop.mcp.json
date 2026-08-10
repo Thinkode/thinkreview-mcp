@@ -1,0 +1,17 @@
+{
+  "mcpServers": {
+    "thinkreview": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-remote",
+        "https://mcp.thinkreview.dev/v1",
+        "--header",
+        "Authorization:${AUTH_HEADER}"
+      ],
+      "env": {
+        "AUTH_HEADER": "Bearer <your-token>"
+      }
+    }
+  }
+}

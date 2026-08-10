@@ -1,0 +1,7 @@
+{
+  "mcpServers": {
+    "thinkreview": {
+      "url": "https://mcp.thinkreview.dev/v1"
+    }
+  }
+}
