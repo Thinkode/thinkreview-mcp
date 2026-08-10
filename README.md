@@ -88,6 +88,8 @@ CLI:
 claude mcp add --transport http thinkreview https://mcp.thinkreview.dev/v1
 ```
 
+![Add ThinkReview MCP with Claude Code CLI](docs/claude-code-setup/01-claude-code-mcp-add.png)
+
 Or config (`~/.claude.json` / project `.mcp.json`):
 
 ```json
@@ -101,8 +103,39 @@ Or config (`~/.claude.json` / project `.mcp.json`):
 }
 ```
 
-Then run `/mcp` and **Authenticate**.  
 Example: [`examples/oauth/claude.mcp.json`](examples/oauth/claude.mcp.json)
+
+#### Authenticate (OAuth)
+
+1. Start Claude Code and run `/mcp`.
+
+![Open /mcp in Claude Code](docs/claude-code-setup/02-claude-code-open-mcp.png)
+
+2. Select **thinkreview** — status shows **needs authentication**.
+
+![thinkreview needs authentication](docs/claude-code-setup/03-claude-code-needs-auth.png)
+
+3. Choose **Authenticate**.
+
+![Select Authenticate](docs/claude-code-setup/04-claude-code-authenticate.png)
+
+4. Claude Code opens the browser OAuth flow (`/authorize` → portal consent).
+
+![Browser OAuth URL in Claude Code](docs/claude-code-setup/05-claude-code-browser-oauth.png)
+
+![Authorize ThinkReview MCP on the portal](docs/claude-code-setup/06-portal-oauth-consent.png)
+
+5. After you click **Allow**, return to Claude Code — you should see **Authentication successful**.
+
+![Authentication successful](docs/claude-code-setup/07-claude-code-auth-success.png)
+
+#### Run a review
+
+Ask Claude Code to review a PR URL (tool: `review_url_code`):
+
+![Invoke review_url_code](docs/claude-code-setup/08-claude-code-review-tool.png)
+
+![Example review result](docs/claude-code-setup/09-claude-code-review-result.png)
 
 ### Claude Desktop
 
@@ -120,6 +153,12 @@ Claude Desktop’s `claude_desktop_config.json` does **not** accept Claude Code�
   }
 }
 ```
+
+![claude_desktop_config.json with mcp-remote](docs/claude-code-setup/10-claude-desktop-config.png)
+
+After restart, Settings → Developer → Local MCP servers should show **thinkreview** as **running**. Complete OAuth when prompted (same portal consent as Claude Code).
+
+![thinkreview running in Claude Desktop](docs/claude-code-setup/11-claude-desktop-running.png)
 
 Example: [`examples/oauth/claude-desktop.mcp.json`](examples/oauth/claude-desktop.mcp.json)
 
