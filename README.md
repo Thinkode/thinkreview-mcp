@@ -30,9 +30,8 @@ ThinkReview fetches changed files through your **stored git credentials** (porta
 
 | Parameter | Required | Description |
 |---|---|---|
-| `prUrl` | Yes | Full or domain-style PR/MR URL (e.g. `https://github.com/org/repo/pull/42`) |
+| `prUrl` | Yes | Full or domain-style PR/MR URL (e.g. `https://github.com/org/repo/pull/42`). This URL is the only identifier ThinkReview needs. |
 | `language` | No | Response language (default: English) |
-| `mrId` | No | Optional tracking ID for your workflow |
 | `forceRegenerate` | No | `true` to bypass cache and force a new review |
 
 URL reviews use the **same review credits** as the ThinkReview browser extension.
